@@ -1,0 +1,164 @@
+
+.lomake {
+      display:inline-block;//flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: left;
+      background-color: #212126;
+      //border: 1px solid black;
+      border-radius: 25px;
+      padding: 20px;
+      color: white;                
+     }
+
+.lomake2 {
+      display:inline-block;//inline-block;//flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: left;
+      background-color: #212126;
+      //border: 1px solid black;
+      border-radius: 25px;
+      padding: 20px;
+      color: white;                
+     }
+
+.ohjelmaNimi {
+     background-color:#303df0;
+     //background-size: 100px 100px;
+     padding: 1px;
+     text-align:center;
+     font-family:Audiowide;
+     color: white;
+     border-radius: 25px;
+     }
+
+.symboli {
+     text-align:center;
+     font-size:20px;
+     }
+
+label,input {
+     display: block;
+     margin: 5px 0;
+     transition: .5s;
+     }
+
+input[type="submit"] {
+      margin: 10px 0 0 0;
+      padding: 5px 10px;
+      background-color: #303df0;
+      color: white;
+      //border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #0667b8; 
+      outline: none;
+      }
+
+input:hover {
+      background-color: powderblue;
+      color: black;
+      box-shadow: 0 0 10px powderblue; 
+      outline: none;
+      }
+
+.signinStatus {
+     color: white;
+     background-color:#303df0;
+     padding: 5px; 
+     }
+
+.ulos {
+     color:white;
+     background-color: red;
+     border-radius: 25px;
+     //border: none;
+     box-shadow: 0 0 10px red; 
+     outline: none;
+     transition: .5s;
+     }
+
+.ulos:hover {
+     background-color: green;
+     box-shadow: 0 0 10px green; 
+     outline: none;
+     transition: .5s;
+     }
+
+.signinStatus2 {
+     display:inline-block;//inline-block;//flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     background-color:#303df0;
+     padding: 5px;
+     border-radius: 25px;
+     text-align:center; 
+     }
+
+.copyr {
+     text-align: center;
+     font-size: 10px;
+     color:white;
+     }
+
+.cont {
+      display:inline-block;//flex;
+      justify-content: center;
+      //align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      background-color: #212126;
+      border-radius: 25px;
+      padding: 20px;
+      color: white;            
+     }
+
+.poista {
+     color:white;
+     background-color: red;
+     border-radius: 25px;
+     //border: none;
+     box-shadow: 0 0 10px red; 
+     outline: none;
+     transition: .5s;
+     }
+
+.poista:hover {
+     background-color: green;
+     box-shadow: 0 0 10px green; 
+     outline: none;
+     }
+
+.aani_nappi {
+    color:white;
+     background-color: blue;
+     border-radius: 25px;
+     //border: none;
+     box-shadow: 0 0 10px blue; 
+     outline: none;
+     transition: .5s;
+     }
+
+.aani_nappi:hover {
+     background-color: green;
+     box-shadow: 0 0 10px green; 
+     outline: none;
+     }
+
+.aihe {
+      text-align: left;
+      background-color: white;
+      //border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px;
+      color: black;
+     }
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<link rel="stylesheet" href="ulkoasu.css">
+<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>userSivu</title>
+</head>
+<body style="background-color:#2e2e36; text-align:center;">
+
+<br>
+
+<div class="lomake2">
+  <div class="signinStatus2">
+  <p2>Kirjautuneena: USER</p2> 
+  <button class="ulos" id="exit2" onclick="ulosFunction()">Kirjaudu ulos</button>
+</div>  
+  <h2><u>Uusin äänestys</u></h2>
+  <p>Aihe:</p>
+  <h3 class="aihe" id="output"></h3>
+  
+  <p1><button class="aani_nappi" onclick="clickCounter()" type="button">Kyllä</button></p1>
+  <p1><button class="aani_nappi" onclick="clickCounter2()" type="button">Ei....</button></p1>
+  <br>
+  
+  <hr>
+  <h2>Äänijakauma</h2>
+  <p>Kyllä äänet yht:</p>
+  <p id="kylla"></p>
+  <hr>
+  <p>Ei äänet yht:</p>
+  <p id="ei"></p>
+</div>
+
+<script src="sovellus_script.js"></script>
+
+<script>
+  function ulosFunction() {
+    document.getElementById("exit2").innerHTML = location.href = "login.html";
+    alert('Kiitos käynnistä!');
+}
+</script>
+
+<script>
+clickCounter();
+
+function clickCounter() {
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 0;
+  }
+  document.getElementById("kylla").innerHTML = localStorage.clickcount;
+}
+</script>
+
+<script>
+clickCounter2();
+
+function clickCounter2() {
+  if (localStorage.clickcount2) {
+    localStorage.clickcount2 = Number(localStorage.clickcount2)+1;
+  } else {
+    localStorage.clickcount2 = 0;
+  }
+  document.getElementById("ei").innerHTML = localStorage.clickcount2;
+}
+</script>
+
+</body>
+</html>

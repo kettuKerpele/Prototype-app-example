@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <link rel="stylesheet" href="ulkoasu.css">
+  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>logInSivu</title>
+</head>
+<body style="background-color:#2e2e36; text-align:center;">
+
+<br>
+<br>
+
+<div class="lomake">
+  <form action="#">
+  <div class="ohjelmaNimi">
+    <h1>Votes &#9887;</h1>
+  </div>
+  <div class="symboli">
+    <h2>&#x1F4E3;</h2>
+  </div>  
+    <label for="username">Käyttäjätunnus:</label>
+    <input type="text" id="username" name="username" placeholder="kirjoita..." required>
+
+    <label for="password">Salasana:</label>
+    <input type="password" id="password" name="password" placeholder="kirjoita..." required>
+
+    <input type="submit" id="kirjautuminen" value="Kirjaudu &#10003;">
+    <br>
+    <div class="copyr">
+      <p8>Copyright &copy 2024; kettuKerpele.github.io</p8>
+    </div>
+  </form>
+</div>    
+    <script type="text/javascript">
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'user' && password === 'user') {
+                alert('Kirjautuminen onnistui!');
+                 location.href = "user.html";
+		}
+
+	    else if (username === 'admin' && password === 'admin') {
+                alert('Kirjautuminen onnistui!');
+                 location.href = "admin.html";
+
+            } else {
+                alert('Käyttäjätunnus tai salasana on väärä. Yritä uudelleen.');
+            }
+	    
+        });
+    </script>
+
+<p>(käyttäjätunnus/salasana) (user/user) tai (admin/admin)</p>
+<p>aloita kirjautumalla admin ja luo äänestys, kirjaudu sen jälkeen user tunnuksilla</p>
+
+
+</body>
+</html>
+

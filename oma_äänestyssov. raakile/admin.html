@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<link rel="stylesheet" href="ulkoasu.css">
+<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>adminSivu</title>
+</head>
+<body style="background-color:#2e2e36; text-align:center;">
+
+<br>
+
+<div class="lomake">
+  <div class="signinStatus2">
+  <p2>Kirjautuneena: ADMIN</p2> 
+  <button class="ulos" id="exit2" onclick="ulosFunction()">Kirjaudu ulos</button>
+</div>
+  <h1>Admin tools</h1>
+  <p>Luodaksesi uuden äänestyksen, paina "poista kaikki tiedot" ja paina sen jälkeen F5</p>
+  <p>(local storagen tyhjennys)</p>
+  <button class="poista" id="poistaKaikki" onclick="remove(event)">Poista kaikki tiedot</button>
+  <p>Lisää uusi..</p>
+  <p>(puolesta/vastaan, esim."kesä on mukavampi kuin talvi??")</p>
+   <form action="#" onsubmit="add(event)">
+   <input id="input" type="text"  placeholder="kirjoita..."required>
+   <input type="submit" value="Valmis &#10003;">
+  </form>
+</div>
+
+<br>
+<br>
+
+<div class="lomake2">  
+  <h2>Käynnissä oleva äänestys:</h2>
+  <h3 class="aihe" id="output"></h3>
+  <h2>Äänijakauma</h2>
+  <p>Kyllä äänet yht:</p>
+  <p id="kylla"></p>
+  <hr>
+  <p>Ei äänet yht:</p>
+  <p id="ei"></p> 
+</div>
+
+<script src="sovellus_script.js"></script>
+
+<script>
+  function ulosFunction() {
+    document.getElementById("exit2").innerHTML = location.href = "login.html";
+    alert('Kiitos käynnistä!');
+}
+</script>
+
+<script>
+document.getElementById("kylla").innerHTML = localStorage.clickcount;
+</script>
+
+<script>
+document.getElementById("ei").innerHTML = localStorage.clickcount2;
+</script>
+
+</body>
+</html>
